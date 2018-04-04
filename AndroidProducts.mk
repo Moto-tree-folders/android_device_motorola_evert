@@ -16,3 +16,8 @@
 
 PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/omni_evert.mk
+
+COMMON_LUNCH_CHOICES := \
+    omni_evert-eng \
+    omni_evert-userdebug \
+    omni_evert-user

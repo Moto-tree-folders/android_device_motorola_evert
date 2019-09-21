@@ -68,6 +68,10 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/keylayout/synaptics_rmi4_i2c.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/synaptics_rmi4_i2c.kl \
     $(LOCAL_PATH)/idc/uinput-fpc.idc:$(TARGET_COPY_OUT_VENDOR)/usr/idc/uinput-fpc.idc
 
+# Lineage hardware
+PRODUCT_PACKAGES += \
+    vendor.lineage.touch@1.0-service.sdm660
+
 # NFC
 PRODUCT_PACKAGES += \
     android.hardware.nfc@1.2-service \

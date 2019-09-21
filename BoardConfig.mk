@@ -30,7 +30,17 @@ BOARD_HAVE_QCOM_FM := true
 BOARD_HAS_QCA_FM_SOC := "cherokee"
 
 # Kernel
+<<<<<<< HEAD
 TARGET_KERNEL_CONFIG := dexk_evert_defconfig
+=======
+TARGET_KERNEL_CONFIG := lineageos_payton_defconfig
+
+# HIDL
+DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/touch.xml
+
+# NFC
+BOARD_NFC_CHIPSET := pn553
+>>>>>>> 50cde57 (payton: Build touch hal)
 
 # Partitions
 BOARD_BOOTIMAGE_PARTITION_SIZE := 67108864

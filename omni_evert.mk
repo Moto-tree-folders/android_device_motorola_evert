@@ -59,6 +59,11 @@ PRODUCT_PACKAGES += \
     charger_res_images \
     charger
 
+# FBE crypto volume modes
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.crypto.volume.filenames_mode=aes-256-cts \
+    ro.crypto.volume.contents_mode=ice
+
 # Properties for decryption
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.hardware.keystore=sdm660 \

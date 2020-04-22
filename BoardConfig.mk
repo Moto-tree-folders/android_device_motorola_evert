@@ -1,5 +1,6 @@
 #
 # Copyright (C) 2017 The LineageOS Project
+# Copyright (C) 2020 Paranoid Android
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -31,6 +32,9 @@ BOARD_HAS_QCA_FM_SOC := "cherokee"
 
 # Kernel
 TARGET_KERNEL_CONFIG := lineageos_evert_defconfig
+
+# NFC
+BOARD_NFC_CHIPSET := pn553
 
 # Partitions
 BOARD_BOOTIMAGE_PARTITION_SIZE := 67108864

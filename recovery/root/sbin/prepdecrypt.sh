@@ -83,7 +83,6 @@ relink /v/bin/qseecomd
 cp /v/lib64/hw/android.hardware.boot@1.0-impl.so /vendor/lib64/hw/
 cp /v/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so /vendor/lib64/hw/
 cp /v/lib64/hw/android.hardware.keymaster@3.0-impl-qti.so /vendor/lib64/hw/
-cp /v/lib64/hw/bootctrl.sdm660.so /vendor/lib64/hw/
 cp /v/lib64/hw/gatekeeper.sdm660.so /vendor/lib64/hw/
 cp /v/lib64/hw/keystore.sdm660.so /vendor/lib64/hw/
 cp /v/lib64/libdiag.so /vendor/lib64/

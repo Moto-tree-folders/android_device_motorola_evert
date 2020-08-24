@@ -113,6 +113,7 @@ TW_EXCLUDE_DEFAULT_USB_INIT := true
 TARGET_RECOVERY_DEVICE_MODULES += android.hardware.boot@1.0
 TW_USE_TOOLBOX := true
 TW_EXCLUDE_TWRPAPP := true
+TW_INCLUDE_RESETPROP := true
 
 # Asian region languages
 TW_EXTRA_LANGUAGES := true

@@ -121,7 +121,7 @@ TW_EXCLUDE_DEFAULT_USB_INIT := true
 TARGET_RECOVERY_DEVICE_MODULES += android.hardware.boot@1.0
 TW_USE_TOOLBOX := true
 TW_EXCLUDE_TWRPAPP := true
-TW_INCLUDE_RESETPROP := true
+TW_OVERRIDE_SYSTEM_PROPS := "ro.build.version.release;ro.build.version.security_patch"
 
 # Asian region languages
 TW_EXTRA_LANGUAGES := true

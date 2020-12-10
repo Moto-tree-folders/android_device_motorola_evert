@@ -27,9 +27,6 @@ PRODUCT_ENFORCE_RRO_TARGETS := \
     framework-res
 
 # AAPT
-PRODUCT_AAPT_CONFIG := normal
-PRODUCT_AAPT_PREF_CONFIG := 560dpi
-PRODUCT_AAPT_PREBUILT_DPI := xxxhdpi xxhdpi xhdpi hdpi
 
 # Audio
 PRODUCT_PACKAGES += \
@@ -88,6 +85,9 @@ PRODUCT_COPY_FILES += \
 # PocketMode
 #PRODUCT_PACKAGES += \
     MotoPocketMode
+
+# Powerhint
+EAS_POWERHINT_VARIANT := sdm630
 
 # Sensors
 PRODUCT_COPY_FILES += \

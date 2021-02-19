@@ -15,4 +15,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_evert.mk
+    $(LOCAL_DIR)/colt_evert.mk

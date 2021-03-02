@@ -16,7 +16,7 @@
 
 # Inherit some common Lineage stuff.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
-$(call inherit-product, vendor/colt/config/common.mk)
+$(call inherit-product, vendor/superior/config/common.mk)
 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
@@ -61,11 +61,14 @@ TARGET_RECOVERY_FSTAB := device/motorola/sdm660-common/rootdir/etc/fstab.qcom
 
 # Device identifiers
 PRODUCT_DEVICE := evert
-PRODUCT_NAME := colt_evert
+PRODUCT_NAME := superior_evert
 PRODUCT_BRAND := motorola
 PRODUCT_MODEL := Moto G6 Plus
 PRODUCT_MANUFACTURER := Motorola
 PRODUCT_RELEASE_NAME := evert
+
+#USE_GAPPS := true
+#TARGET_ARCH := arm64
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=evert \

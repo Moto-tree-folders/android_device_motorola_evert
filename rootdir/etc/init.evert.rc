@@ -33,38 +33,6 @@ on property:ro.boot.hardware.sku=XT1926-9
 
 on early-init
     setprop ro.boot.product.hardware.sku qcril
-
-on boot
-    chown system system /sys/homebutton/enable
-    chown system system /sys/homebutton/enable_off
-    chown system system /sys/homebutton/haptic
-    chown system system /sys/homebutton/haptic_off
-    chown system system /sys/homebutton/key
-    chown system system /sys/homebutton/key_hold
-    chown system system /sys/homebutton/key_dbltap
-    chown system system /sys/homebutton/key_left
-    chown system system /sys/homebutton/key_right
-    chown system system /sys/homebutton/key_screenoff
-    chown system system /sys/homebutton/key_screenoff_hold
-    chown system system /sys/homebutton/key_screenoff_dbltap
-    chown system system /sys/homebutton/key_screenoff_left
-    chown system system /sys/homebutton/key_screenoff_right
-    
-        # KCal
-    chown system system /sys/devices/platform/kcal_ctrl.0/kcal_cont
-    chown system system /sys/devices/platform/kcal_ctrl.0/kcal_enable
-    chown system system /sys/devices/platform/kcal_ctrl.0/kcal_hue
-    chown system system /sys/devices/platform/kcal_ctrl.0/kcal_sat
-    chown system system /sys/devices/platform/kcal_ctrl.0/kcal_val
-    chown system system /sys/devices/platform/kcal_ctrl.0/kcal_min
-    chown system system /sys/devices/platform/kcal_ctrl.0/kcal
-    chmod 660 /sys/devices/platform/kcal_ctrl.0/kcal_cont
-    chmod 660 /sys/devices/platform/kcal_ctrl.0/kcal_enable
-    chmod 660 /sys/devices/platform/kcal_ctrl.0/kcal_hue
-    chmod 660 /sys/devices/platform/kcal_ctrl.0/kcal_sat
-    chmod 660 /sys/devices/platform/kcal_ctrl.0/kcal_val
-    chmod 660 /sys/devices/platform/kcal_ctrl.0/kcal_min
-    chmod 660 /sys/devices/platform/kcal_ctrl.0/kcal
     
 on property:sys.boot_completed=1
     write  /sys/devices/platform/kcal_ctrl.0/kcal "230 230 230"

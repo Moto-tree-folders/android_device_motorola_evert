@@ -30,10 +30,3 @@ on early-init
 
 on property:ro.boot.hardware.sku=XT1926-9
     setprop ro.hw.nfc false
-
-on early-init
-    setprop ro.boot.product.hardware.sku qcril
-    
-on property:sys.boot_completed=1
-    write  /sys/devices/platform/kcal_ctrl.0/kcal "230 230 230"
-    write  /sys/devices/platform/kcal_ctrl.0/kcal_enable 1

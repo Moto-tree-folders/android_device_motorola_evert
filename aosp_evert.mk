@@ -67,12 +67,25 @@ PRODUCT_MODEL := Moto G6 Plus
 PRODUCT_MANUFACTURER := Motorola
 PRODUCT_RELEASE_NAME := evert
 
-USE_GAPPS := true
-TARGET_ARCH := arm64
-IS_PHONE := true
+TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_GAPPS_ARCH := arm64
+TARGET_INCLUDE_WIFI_EXT := true
+NEZUKO_MAINTAINER=seba3567
+CUSTOM_BUILD_TYPE=OFFICIAL
+PRODUCT_PRODUCT_PROPERTIES += \
+  ro.nezuko.cpu=SDM630
 TARGET_SUPPORTS_GOOGLE_RECORDER := false
 TARGET_INCLUDE_STOCK_ARCORE := false
 TARGET_INCLUDE_LIVE_WALLPAPERS :=  false
+
+# debug flags (for enable adb etc from boot)
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+  persist.service.adb.enable=1 \
+  ro.debuggable=1 \
+  persist.adb.notify=0 \
+  persist.sys.usb.config=mtp,adb \
+  ro.secure=0 \
+  ro.adb.secure=0 \      
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=evert \

@@ -16,7 +16,9 @@
 
 # Inherit some common Lineage stuff.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+$(call inherit-product, vendor/kangos/config/common.mk)
+USE_GAPPS := true
+
 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
@@ -61,31 +63,11 @@ TARGET_RECOVERY_FSTAB := device/motorola/sdm660-common/rootdir/etc/fstab.qcom
 
 # Device identifiers
 PRODUCT_DEVICE := evert
-PRODUCT_NAME := aosp_evert
+PRODUCT_NAME := kangos_evert
 PRODUCT_BRAND := motorola
 PRODUCT_MODEL := Moto G6 Plus
 PRODUCT_MANUFACTURER := Motorola
-PRODUCT_RELEASE_NAME := evert
-
-TARGET_BOOT_ANIMATION_RES := 1080
-TARGET_GAPPS_ARCH := arm64
-TARGET_INCLUDE_WIFI_EXT := true
-NEZUKO_MAINTAINER=seba3567
-CUSTOM_BUILD_TYPE=OFFICIAL
-PRODUCT_PRODUCT_PROPERTIES += \
-  ro.nezuko.cpu=SDM630
-TARGET_SUPPORTS_GOOGLE_RECORDER := false
-TARGET_INCLUDE_STOCK_ARCORE := false
-TARGET_INCLUDE_LIVE_WALLPAPERS :=  false
-
-# debug flags (for enable adb etc from boot)
-PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-  persist.service.adb.enable=1 \
-  ro.debuggable=1 \
-  persist.adb.notify=0 \
-  persist.sys.usb.config=mtp,adb \
-  ro.secure=0 \
-  ro.adb.secure=0 \      
+PRODUCT_RELEASE_NAME := evert    
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=evert \

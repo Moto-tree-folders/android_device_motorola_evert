@@ -16,9 +16,20 @@
 
 # Inherit some common Lineage stuff.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
-$(call inherit-product, vendor/kangos/config/common.mk)
-USE_GAPPS := true
+$(call inherit-product, vendor/palladium/config/common_full_phone.mk)
 
+TARGET_FACE_UNLOCK_SUPPORTED := true
+PALLADIUM_BUILD_VARIANT := GAPPS
+TARGET_GAPPS_ARCH := arm64
+TARGET_SUPPORTS_GOOGLE_RECORDER := false
+TARGET_INCLUDE_STOCK_ARCORE := false
+
+#PALLADIUM-PROPS
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.palladiumdevice.maintainer=Seba_3567 \
+    ro.palladiumdevice.cpu=SDM630 \
+    ro.palladiumdevice.display=5.9 \
+    ro.palladiumdevice.displaytype=FULLHD+
 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
@@ -63,7 +74,7 @@ TARGET_RECOVERY_FSTAB := device/motorola/sdm660-common/rootdir/etc/fstab.qcom
 
 # Device identifiers
 PRODUCT_DEVICE := evert
-PRODUCT_NAME := kangos_evert
+PRODUCT_NAME := palladium_evert
 PRODUCT_BRAND := motorola
 PRODUCT_MODEL := Moto G6 Plus
 PRODUCT_MANUFACTURER := Motorola

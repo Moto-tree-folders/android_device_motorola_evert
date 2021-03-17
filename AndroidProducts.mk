@@ -15,4 +15,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/palladium_evert.mk
+    $(LOCAL_DIR)/kangos_evert.mk

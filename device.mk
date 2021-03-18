@@ -58,9 +58,6 @@ PRODUCT_PACKAGES += \
 # Init
 PRODUCT_PACKAGES += \
     init.evert.rc
-    
-    
-EAS_CUSTOM_INIT := sdm630
 
 # Keylayout
 PRODUCT_COPY_FILES += \

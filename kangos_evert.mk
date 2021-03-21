@@ -19,6 +19,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, vendor/kangos/config/common.mk)
 
 TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_OPLAUNCHER := true
 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)

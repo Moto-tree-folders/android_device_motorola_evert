@@ -17,6 +17,11 @@
 # Inherit from motorola sdm660-common
 -include device/motorola/sdm660-common/BoardConfigCommon.mk
 
+$(call inherit-product, vendor/vendor/motorola/Moto-prebuilt/config.mk)
+
+MOTO_DOLBY := true
+MOTOROLA_DEVICE := true
+
 DEVICE_PATH := device/motorola/evert
 
 # Assertions

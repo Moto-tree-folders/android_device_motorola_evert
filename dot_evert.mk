@@ -18,11 +18,11 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, vendor/dot/config/common.mk)
 
-TARGET_FACE_UNLOCK_SUPPORTED := true
-TARGET_OPLAUNCHER := true
+#TARGET_FACE_UNLOCK_SUPPORTED := true
+#TARGET_OPLAUNCHER := true
 #TARGET_INCLUDE_OP_FILE_MANAGER := true
-USE_GAPPS := true
-WITH_GAPPS += true
+#USE_GAPPS := true
+#WITH_GAPPS += true
 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)

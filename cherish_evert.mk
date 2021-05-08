@@ -16,12 +16,11 @@
 
 # Inherit some common Lineage stuff.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
-$(call inherit-product, vendor/kangos/config/common.mk)
+$(call inherit-product, vendor/cherish/config/common_full_phone.mk)
 
 TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_OPLAUNCHER := true
-#TARGET_INCLUDE_OP_FILE_MANAGER := true
-USE_GAPPS := true
+TARGET_INCLUDE_OP_FILE_MANAGER := true
 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
@@ -66,7 +65,7 @@ TARGET_RECOVERY_FSTAB := device/motorola/sdm660-common/rootdir/etc/fstab.qcom
 
 # Device identifiers
 PRODUCT_DEVICE := evert
-PRODUCT_NAME := kangos_evert
+PRODUCT_NAME := cherish_evert
 PRODUCT_BRAND := motorola
 PRODUCT_MODEL := Moto G6 Plus
 PRODUCT_MANUFACTURER := Motorola

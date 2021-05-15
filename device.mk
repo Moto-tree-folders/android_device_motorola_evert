@@ -15,7 +15,11 @@
 #
 
 # Vendor blobs
+<<<<<<< HEAD
 $(call inherit-product-if-exists, vendor/motorola/evert/evert-vendor.mk)
+=======
+$(call inherit-product, vendor/motorola/lake/lake-vendor.mk)
+>>>>>>> f7f024e (lake: Don't let builds complete without vendor tree)
 
 # Properties
 -include $(LOCAL_PATH)/vendor_prop.mk

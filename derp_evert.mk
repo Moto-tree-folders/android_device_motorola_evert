@@ -16,11 +16,18 @@
 
 # Inherit some common Lineage stuff.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
-$(call inherit-product, vendor/cherish/config/common_full_phone.mk)
+
+# Inherit some common DerpFest Rom stuff.
+$(call inherit-product, vendor/derp/config/common_full_phone.mk)
 
 TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_OPLAUNCHER := true
 TARGET_INCLUDE_OP_FILE_MANAGER := true
+TARGET_BOOT_ANIMATION_RES := 1080
+
+# Adding Derp stuffs
+IS_PHONE := true
+TARGET_GAPPS_ARCH := arm64
 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
@@ -65,7 +72,7 @@ TARGET_RECOVERY_FSTAB := device/motorola/sdm660-common/rootdir/etc/fstab.qcom
 
 # Device identifiers
 PRODUCT_DEVICE := evert
-PRODUCT_NAME := cherish_evert
+PRODUCT_NAME := derp_evert
 PRODUCT_BRAND := motorola
 PRODUCT_MODEL := Moto G6 Plus
 PRODUCT_MANUFACTURER := Motorola

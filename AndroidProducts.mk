@@ -15,4 +15,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/derp_evert.mk \
+    $(LOCAL_DIR)/dot_evert.mk \

@@ -18,7 +18,7 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 
 # Inherit some common DerpFest Rom stuff.
-$(call inherit-product, vendor/dot/config/common.mk)
+$(call inherit-product, vendor/kangos/configs/common.mk)
 
 
 #Boot Animation
@@ -26,31 +26,6 @@ TARGET_BOOT_ANIMATION_RES := 1080
 
 #Faceunlock
 TARGET_FACE_UNLOCK_SUPPORTED := true
-
-
-IT_DOTOS := true 
-ifeq ($(IT_DOTOS), true)
-
-BUILD_BROKEN_DUP_RULES := true
-BUILD_BROKEN_USES_BUILD_COPY_HEADERS := true
-SKIP_ABI_CHECKS := true
-
-YOUR_HW_PLATFORM := msm8998
-
-# Hardware
-PRODUCT_BOARD_PLATFORM := $(YOUR_HW_PLATFORM) 
-PRODUCT_USES_QCOM_HARDWARE := true
-
-# HALS
-SRC_AUDIO_HAL_DIR := hardware/qcom-caf/$(YOUR_HW_PLATFORM)/audio 
-SRC_DISPLAY_HAL_DIR := hardware/qcom-caf/$(YOUR_HW_PLATFORM)/display 
-SRC_MEDIA_HAL_DIR := hardware/qcom-caf/$(YOUR_HW_PLATFORM)/media
-
-# Soong namespaces
-PRODUCT_SOONG_NAMESPACES += device/motorola/evert
-PRODUCT_SOONG_NAMESPACES += device/motorola/sdm660-common
-PRODUCT_SOONG_NAMESPACES += hardware/qcom-caf/msm8998
-endif
 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
@@ -95,11 +70,11 @@ TARGET_RECOVERY_FSTAB := device/motorola/sdm660-common/rootdir/etc/fstab.qcom
 
 # Device identifiers
 PRODUCT_DEVICE := evert
-PRODUCT_NAME := dot_evert
+PRODUCT_NAME := kangos_evert
 PRODUCT_BRAND := motorola
 PRODUCT_MODEL := Moto G6 Plus
 PRODUCT_MANUFACTURER := Motorola
-PRODUCT_RELEASE_NAME := evert    
+PRODUCT_RELEASE_NAME := evert
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=evert \

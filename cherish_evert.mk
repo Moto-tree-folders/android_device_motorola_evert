@@ -18,7 +18,7 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 
 # Inherit some common DerpFest Rom stuff.
-$(call inherit-product, vendor/kangos/configs/common.mk)
+$(call inherit-product, vendor/cherish/config/common.mk)
 
 
 #Boot Animation
@@ -70,7 +70,7 @@ TARGET_RECOVERY_FSTAB := device/motorola/sdm660-common/rootdir/etc/fstab.qcom
 
 # Device identifiers
 PRODUCT_DEVICE := evert
-PRODUCT_NAME := kangos_evert
+PRODUCT_NAME := cherish_evert
 PRODUCT_BRAND := motorola
 PRODUCT_MODEL := Moto G6 Plus
 PRODUCT_MANUFACTURER := Motorola

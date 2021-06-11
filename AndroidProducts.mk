@@ -15,6 +15,6 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/kangos_evert.mk
+    $(LOCAL_DIR)/cherish_evert.mk
 
 

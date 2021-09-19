@@ -15,6 +15,11 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/dot_evert.mk
+    $(LOCAL_DIR)/cherish_evert.mk
+
+COMMON_LUNCH_CHOICES := \
+    cherish_evert-eng \
+    cherish_evert-userdebug \
+    cherish_evert-user
 
 
